@@ -1,0 +1,53 @@
+/* HidePrice for PS 1.6 – agresywne ukrywanie cen i kwot */
+/* Produkt (strona produktu) */
+#our_price_display,
+#reduction_percent,
+#reduction_amount,
+#old_price,
+.price,
+.prices,
+.price.product-price,
+.content_prices,
+.our_price_display,
+#unit_price_display,
+#reduced_price_display,
+#old_price_display,
+#discounted_price,
+.price-percent-reduction,
+#product_reference .price,
+#attributes .price { display: none !important; }
+
+/* Karty/listy produktów */
+.product_list .price,
+.product_list .price.product-price,
+.product_list .content_price,
+.product_list .price-percent-reduction,
+.featured-products .price,
+.blockproductscategory .price,
+.blockproductscategory .content_price { display: none !important; }
+
+/* Koszyk / checkout */
+#cart_summary .price,
+#cart_summary .total_price_container,
+#cart_summary .cart_total .price,
+#cart_summary tfoot .price,
+#total_price_container,
+#total_price,
+.cart_block .price,
+.cart_block_total,
+.ajax_cart_total,
+#order .price,
+#order-opc .price,
+.payment_amount,
+#HOOK_SHOPPING_CART .price,
+#HOOK_SHOPPING_CART .price_container { display: none !important; }
+
+/* Nagłówkowy mini-koszyk */
+#header .shopping_cart .price,
+#header .cart_block .price { display: none !important; }
+
+/* Wszelkie walutowe badge/etykiety */
+span.price, div.price, p.price, .price-container, .price-display, .price-box { display: none !important; }
+
+/* Zabezpieczenie przed pustymi odstępami */
+.content_prices, .content_price, .price-container, .price-box { height: 0 !important; margin: 0 !important; padding: 0 !important; }
